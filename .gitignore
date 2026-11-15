@@ -218,3 +218,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ===== 프로젝트 전용 =====
+# 데이터 (용량이 커서 업로드 금지)
+data/
+*.tif
+*.tiff
+*.zip
+
+# 학습된 모델 가중치 (보통 수백 MB)
+*.pth
+*.pt
+checkpoints/
+
+# 대용량 결과물 (작은 png 그림은 README에 쓰니까 허용)
+outputs/*.tif
+outputs/*.gpkg
+
+# 기타
+.ipynb_checkpoints/
+.venv/
+.DS_Store
